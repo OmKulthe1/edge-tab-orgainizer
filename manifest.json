@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Edge Tab Organizer",
+  "version": "1.0",
+  "description": "Organize your browser tabs using AI",
+  "permissions": [
+    "tabs",
+    "storage",
+    "tabGroups"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Edge Tab Organizer"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "organize-tabs": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+U",
+        "mac": "Command+Shift+O"
+      },
+      "description": "Organize tabs with the current method"
+    }
+  }
+} 
